@@ -49,11 +49,12 @@ getSignature(): number{
 }
 
 class MyHouse extends House {
-    openDoor(key: Key): void{
+
+    openDoor(key: Key): void {
         if (key.getSignature() === this.key.getSignature()) {
-            this.door === true;
-      }
-  }
+            this.door = true;
+        }
+    }
 }
 
 
